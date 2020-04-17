@@ -80,7 +80,7 @@ spec:
     spec:
       containers:
         - name: prometurbo
-          image: turbonomic/prometurbo:7.21.0
+          image: turbonomic/prometurbo:6.4
           imagePullPolicy: IfNotPresent
           args:
             - --v=2
@@ -90,7 +90,7 @@ spec:
             readOnly: true
           - name: varlog
             mountPath: /var/log
-        - image: turbonomic/appmetric:7.21.0
+        - image: turbonomic/appmetric:6.4
           imagePullPolicy: IfNotPresent
           name: appmetric
           args:
