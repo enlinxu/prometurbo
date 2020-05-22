@@ -7,6 +7,9 @@ metadata:
     app: prometurbo
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      app: prometurbo
   template:
     metadata:
       labels:
